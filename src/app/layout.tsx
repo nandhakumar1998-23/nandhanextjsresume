@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/next-script-for-ga */
-import "./globals.css"; // ✅ correct
+import "../styles/globals.css";
 
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
