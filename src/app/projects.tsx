@@ -1,7 +1,9 @@
 "use client";
 
-
+import Image, { StaticImageData } from "next/image";
 import { Typography } from "@material-tailwind/react";
+
+// Image imports
 import violet from "../../public/image/violet.png";
 import zebra from "../../public/image/zebra.png";
 import Magudam from "../../public/image/magudam.png";
@@ -12,21 +14,25 @@ import balasastha from "../../public/image/balasastha.png";
 import skylink from "../../public/image/skylink.png";
 import Zeacode from "../../public/image/zeacode.png";
 
-import { StaticImageData } from "next/image";
-
+// Type definition
 type ProjectCardProps = {
-  img: StaticImageData; // updated from string
+  img: StaticImageData;
   title: string;
   link: string;
   desc: string;
 };
 
-
+// Individual project card
 function ProjectCard({ img, title, link, desc }: ProjectCardProps) {
   return (
     <div className="rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
       <a href={link} target="_blank" rel="noopener noreferrer">
-        <img src={img} alt={title} className="w-full h-52 object-cover" />
+        <Image
+          src={img}
+          alt={title}
+          className="w-full h-52 object-cover"
+          placeholder="blur"
+        />
       </a>
       <div className="p-4">
         <h3 className="font-bold text-lg mb-2">{title}</h3>
@@ -36,8 +42,8 @@ function ProjectCard({ img, title, link, desc }: ProjectCardProps) {
   );
 }
 
-
-const PROJECTS = [
+// Project list
+const PROJECTS: ProjectCardProps[] = [
   {
     img: violet,
     title: "Violet Infotech",
@@ -94,6 +100,7 @@ const PROJECTS = [
   },
 ];
 
+// Projects section
 export default function Projects() {
   return (
     <section className="py-28 px-8 bg-gray-50">
