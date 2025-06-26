@@ -1,6 +1,6 @@
 "use client";
 
-import Image, { StaticImageData } from "next/image";
+
 import { Typography } from "@material-tailwind/react";
 import violet from "../../public/image/violet.png";
 import zebra from "../../public/image/zebra.png";
@@ -12,13 +12,15 @@ import balasastha from "../../public/image/balasastha.png";
 import skylink from "../../public/image/skylink.png";
 import Zeacode from "../../public/image/zeacode.png";
 
-// Individual project card
+import { StaticImageData } from "next/image";
+
 type ProjectCardProps = {
-  img: string; // or StaticImageData if using imported images
+  img: StaticImageData; // updated from string
   title: string;
   link: string;
   desc: string;
 };
+
 
 function ProjectCard({ img, title, link, desc }: ProjectCardProps) {
   return (
