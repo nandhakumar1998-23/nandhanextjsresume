@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/next-script-for-ga */
-import '../styles/globals.css';
+import '../styles/globals.css'; // ✅ correct
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import { Layout, FixedPlugin } from "@/components";
