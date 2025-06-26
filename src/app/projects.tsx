@@ -13,25 +13,27 @@ import skylink from "../../public/image/skylink.png";
 import Zeacode from "../../public/image/zeacode.png";
 
 // Individual project card
-function ProjectCard({ img, title, link, desc }) {
+type ProjectCardProps = {
+  img: string; // or StaticImageData if using imported images
+  title: string;
+  link: string;
+  desc: string;
+};
+
+function ProjectCard({ img, title, link, desc }: ProjectCardProps) {
   return (
     <div className="rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
       <a href={link} target="_blank" rel="noopener noreferrer">
-        <Image
-          src={img}
-          alt={title}
-          width={600}
-          height={400}
-          className="w-full h-64 object-cover"
-        />
-        <div className="p-4 bg-white">
-          <h3 className="text-xl font-bold text-gray-900">{title}</h3>
-          <p className="text-gray-600 text-sm mt-2">{desc}</p>
-        </div>
+        <img src={img} alt={title} className="w-full h-52 object-cover" />
       </a>
+      <div className="p-4">
+        <h3 className="font-bold text-lg mb-2">{title}</h3>
+        <p className="text-sm text-gray-600">{desc}</p>
+      </div>
     </div>
   );
 }
+
 
 const PROJECTS = [
   {
