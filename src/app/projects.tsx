@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { Typography } from "@material-tailwind/react";
 import violet from "../../public/image/violet.png";
 import zebra from "../../public/image/zebra.png";
