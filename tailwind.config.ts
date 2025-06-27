@@ -6,9 +6,9 @@ const config: Config = withMT({
     "./src/app/**/*.{js,ts,jsx,tsx}",
     "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
-  theme: {},
+  theme: {
+    extend: {},
+  },
   plugins: [],
 });
-
-
 export default config;
