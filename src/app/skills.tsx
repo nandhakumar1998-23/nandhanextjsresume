@@ -74,7 +74,7 @@ export function Skills() {
     {/* Violet Infotech */}
     <div className="p-6 rounded-xl shadow-lg bg-white">
       <h3 className="text-xl font-bold text-purple-700 mb-2">Violet Infotech</h3>
-      <p className="text-sm text-gray-500 mb-2">June 9, 2025 – May 29, 2024</p>
+      <p className="text-sm text-gray-500 mb-2">June 16, 2025 – May 29, 2024</p>
       <p className="text-gray-700 text-sm leading-relaxed">
         Led frontend projects using Bootstrap, ReactJS, WordPress, and Webflow. Supported backend with Django, integrated Electron.js for cross-platform apps, and developed a chatbot using Dialogflow. Delivered ERP solutions with advanced UI/UX and exceeded client expectations.
       </p>
