@@ -13,6 +13,7 @@ import pavico from "../../public/image/pavico.png";
 import balasastha from "../../public/image/balasastha.png";
 import skylink from "../../public/image/skylink.png";
 import Zeacode from "../../public/image/zeacode.png";
+import Bluez from "../../public/image/Bluez.jpeg";
 
 // Type definition
 type ProjectCardProps = {
@@ -97,6 +98,12 @@ const PROJECTS: ProjectCardProps[] = [
     title: "Zeacode",
     link: "https://zeacode.netlify.app/",
     desc: "Web App — React + Vite + TypeScript",
+  },
+  {
+    img: Bluez,
+    title: "Bluez Infomatic",
+    link: "https://www.bluezinfo.com/",
+    desc: "Web App — HTML, CSS, JS, PHP + Laravel + TypeScript",
   },
 ];
 
