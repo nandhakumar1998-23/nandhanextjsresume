@@ -16,6 +16,7 @@ import Zeacode from "../../public/image/zeacode.png";
 import Bluez from "../../public/image/bluez.jpeg";
 import Annur from "../../public/image/annur.jpeg";
 import Bluezcareer from "../../public/image/Bluezcareer.jpeg";
+import bluezattendance from "../../public/image/bluezattendance.jpeg";
 
 // Type definition
 type ProjectCardProps = {
@@ -117,6 +118,12 @@ const PROJECTS: ProjectCardProps[] = [
     img: Bluezcareer,
     title: "Bluez career",
     link: "https://bluezcareer.netlify.app/",
+    desc: "Web App — Reactjs, NextJS, Vite + Django Rest Framework + TypeScript",
+  },
+  {
+    img: bluezattendance,
+    title: "Bluez Attendance",
+    link: "https://bluezattendance.netlify.app/",
     desc: "Web App — Reactjs, NextJS, Vite + Django Rest Framework + TypeScript",
   },
 ];
