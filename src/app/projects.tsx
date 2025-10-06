@@ -13,7 +13,7 @@ import pavico from "../../public/image/pavico.png";
 import balasastha from "../../public/image/balasastha.png";
 import skylink from "../../public/image/skylink.png";
 import Zeacode from "../../public/image/zeacode.png";
-import Bluez from "../../public/image/Bluez.jpeg";
+import Bluez from "../../public/image/bluez.jpeg";
 
 // Type definition
 type ProjectCardProps = {
